@@ -1,371 +1,382 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Angel Ramirez Duenas - Finance & Technology</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angel Ramirez — Finance & Technology Builder</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">NAR</div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#resume" class="nav-link">Resume</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <div class="nav-logo">AR</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#cv" class="mobile-link">CV</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg-texture"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Toronto · Finance · Technology</p>
+      <h1 class="hero-name">Angel<br /><em>Ramirez</em></h1>
+      <p class="hero-title">Finance Student &amp; Technology Builder</p>
+      <p class="hero-bio">
+        I build systems and tools that help businesses automate operations 
+        and make better decisions using data.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-decoration">
+      <div class="deco-circle"></div>
+      <div class="deco-ring"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-label">
+        <span class="section-tag">01 — About</span>
+      </div>
+      <div class="about-text">
+        <h2 class="section-heading">Bridging finance<br /><em>with technology</em></h2>
+        <p>
+          I'm Angel Ramirez, a Finance and Economics student at Rotman Commerce, 
+          University of Toronto (Class of 2027), specializing in Data Science.
+        </p>
+        <p>
+          My work lives at the intersection of financial analysis, data systems, 
+          and operational technology. I've built pricing engines, revenue forecasting 
+          models, and business dashboards for real hospitality operations — solving 
+          actual problems with measurable outcomes.
+        </p>
+        <p>
+          I'm drawn to automation, analytics, and the kind of tools that help 
+          decision-makers move faster and smarter. Whether that's a Python-based 
+          forecasting model or a full-stack analytics interface, I build for clarity 
+          and impact.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">20%</span>
+            <span class="stat-label">Budget accuracy improvement</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">40%</span>
+            <span class="stat-label">Reservation growth delivered</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">10%</span>
+            <span class="stat-label">Profit margin increase</span>
+          </div>
         </div>
-    </nav>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">New Angel Ramirez Duenas</h1>
-                <p class="hero-subtitle">Finance Student & Technology Builder</p>
-                <p class="hero-description">
-                    I build systems and tools that help businesses automate operations and make better decisions using data. 
-                    Passionate about combining finance expertise with technology to create impactful solutions.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                </div>
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 — Projects</span>
+        <h2 class="section-heading">What I build</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Card 1 -->
+        <article class="project-card">
+          <div class="card-top">
+            <div class="card-number">01</div>
+            <div class="card-links">
+              <a href="#" title="GitHub" class="card-icon-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+              <a href="#" title="Live Demo" class="card-icon-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
             </div>
-            <div class="hero-image">
-                <div class="image-wrapper">
-                    <img src="profile.jpg" alt="New Angel Ramirez Duenas" class="profile-image">
-                    <div class="image-decoration"></div>
-                </div>
+          </div>
+          <h3 class="card-title">Hotel Analytics Dashboard</h3>
+          <p class="card-desc">
+            Full-stack analytics interface for boutique hotel operations — tracking 
+            occupancy, ADR, RevPAR, and cost trends in real time to support 
+            data-driven management decisions.
+          </p>
+          <div class="card-tags">
+            <span>Python</span><span>SQL</span><span>Dash</span><span>Pandas</span>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="project-card">
+          <div class="card-top">
+            <div class="card-number">02</div>
+            <div class="card-links">
+              <a href="#" title="GitHub" class="card-icon-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+              <a href="#" title="Live Demo" class="card-icon-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
             </div>
+          </div>
+          <h3 class="card-title">AI Supply Chain Risk Detection</h3>
+          <p class="card-desc">
+            Machine learning tool that ingests supply chain data to flag risk signals 
+            — delay patterns, vendor instability, and demand shocks — before they 
+            impact operations.
+          </p>
+          <div class="card-tags">
+            <span>Python</span><span>Scikit-learn</span><span>ML</span><span>APIs</span>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="project-card">
+          <div class="card-top">
+            <div class="card-number">03</div>
+            <div class="card-links">
+              <a href="#" title="GitHub" class="card-icon-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+              <a href="#" title="Live Demo" class="card-icon-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">Business Automation Dashboard</h3>
+          <p class="card-desc">
+            Operational intelligence suite that consolidates reporting, KPIs, and 
+            workflow automation for small businesses — reducing manual overhead and 
+            improving decision velocity.
+          </p>
+          <div class="card-tags">
+            <span>JavaScript</span><span>Python</span><span>SQL</span><span>REST APIs</span>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="project-card">
+          <div class="card-top">
+            <div class="card-number">04</div>
+            <div class="card-links">
+              <a href="#" title="GitHub" class="card-icon-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+              <a href="#" title="Live Demo" class="card-icon-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">Revenue Management System</h3>
+          <p class="card-desc">
+            Regression-driven pricing and forecasting engine for boutique hotels — 
+            modelling seasonal demand, cost structures, and ADR sensitivity to 
+            optimise revenue decisions.
+          </p>
+          <div class="card-tags">
+            <span>Python</span><span>Regression</span><span>Excel</span><span>Stata</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 — Skills</span>
+        <h2 class="section-heading">Tools &amp; expertise</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <span class="skill-dot"></span>Programming
+          </h3>
+          <ul class="skill-list">
+            <li><span class="skill-bar"><span style="width:90%"></span></span>Python</li>
+            <li><span class="skill-bar"><span style="width:75%"></span></span>JavaScript</li>
+            <li><span class="skill-bar"><span style="width:70%"></span></span>SQL</li>
+            <li><span class="skill-bar"><span style="width:65%"></span></span>Stata</li>
+            <li><span class="skill-bar"><span style="width:80%"></span></span>HTML / CSS</li>
+          </ul>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a Commerce student at the University of Toronto's Rotman School of Management, 
-                        specializing in finance and technology. My passion lies at the intersection of finance, 
-                        business systems, and data-driven decision making.
-                    </p>
-                    <p>
-                        With experience building dashboards, analytics tools, and web systems for businesses, 
-                        I focus on creating solutions that streamline operations and unlock insights from data. 
-                        I believe that technology should empower businesses to make smarter decisions faster.
-                    </p>
-                    <p>
-                        When I'm not coding or analyzing data, you'll find me exploring new technologies, 
-                        reading about finance trends, or working on side projects that combine my dual interests 
-                        in technology and business.
-                    </p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <h3>3+</h3>
-                        <p>Years of Experience</p>
-                    </div>
-                    <div class="stat">
-                        <h3>8+</h3>
-                        <p>Projects Completed</p>
-                    </div>
-                    <div class="stat">
-                        <h3>15+</h3>
-                        <p>Skills Mastered</p>
-                    </div>
-                </div>
-            </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <span class="skill-dot"></span>Data &amp; Analytics
+          </h3>
+          <ul class="skill-list">
+            <li><span class="skill-bar"><span style="width:85%"></span></span>Data Dashboards</li>
+            <li><span class="skill-bar"><span style="width:80%"></span></span>Business Automation</li>
+            <li><span class="skill-bar"><span style="width:70%"></span></span>Machine Learning</li>
+            <li><span class="skill-bar"><span style="width:75%"></span></span>Financial Forecasting</li>
+            <li><span class="skill-bar"><span style="width:80%"></span></span>Excel (Advanced)</li>
+          </ul>
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                    </div>
-                    <h3>Hotel Analytics Dashboard</h3>
-                    <p>
-                        Comprehensive analytics platform for hotel operators. Real-time occupancy tracking, 
-                        revenue optimization, and performance metrics.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">SQL</span>
-                    </div>
-                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                    </div>
-                    <h3>AI Supply Chain Risk Detection</h3>
-                    <p>
-                        Machine learning tool that identifies supply chain risks and disruptions. 
-                        Predictive analytics for proactive decision making.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">ML</span>
-                        <span class="tech-tag">Data Analysis</span>
-                    </div>
-                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                    </div>
-                    <h3>Business Automation Dashboard</h3>
-                    <p>
-                        Custom automation platform for managing business workflows and processes. 
-                        Integrates with multiple systems for seamless data flow.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">APIs</span>
-                    </div>
-                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-dollar-sign"></i>
-                        </div>
-                    </div>
-                    <h3>Revenue Management System</h3>
-                    <p>
-                        Boutique hotel revenue optimization system. Dynamic pricing, demand forecasting, 
-                        and yield management in one platform.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Analytics</span>
-                    </div>
-                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <span class="skill-dot"></span>Business &amp; Finance
+          </h3>
+          <ul class="skill-list">
+            <li><span class="skill-bar"><span style="width:90%"></span></span>Financial Analysis</li>
+            <li><span class="skill-bar"><span style="width:85%"></span></span>Revenue Management</li>
+            <li><span class="skill-bar"><span style="width:80%"></span></span>Operations Analytics</li>
+            <li><span class="skill-bar"><span style="width:75%"></span></span>FP&amp;A</li>
+            <li><span class="skill-bar"><span style="width:70%"></span></span>Unit Economics</li>
+          </ul>
         </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                        <li>HTML & CSS</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
+      </div>
+    </div>
+  </section>
 
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Data & Analytics</h3>
-                    <ul>
-                        <li>Data Dashboards</li>
-                        <li>Business Automation</li>
-                        <li>Machine Learning</li>
-                        <li>Data Visualization</li>
-                    </ul>
-                </div>
+  <!-- ===== CV ===== -->
+  <section id="cv">
+    <div class="container cv-grid">
+      <div class="cv-left">
+        <span class="section-tag">04 — CV</span>
+        <h2 class="section-heading">Experience &amp;<br /><em>Education</em></h2>
+        <p class="cv-intro">
+          Finance student with hands-on experience building and running financial 
+          systems for real businesses — from boutique hotels to agave spirit brands.
+        </p>
+        <a href="CV_2026_Jan.pdf" download class="btn btn-primary">Download CV (PDF)</a>
+      </div>
+      <div class="cv-right">
+        <div class="timeline">
 
-                <div class="skill-category">
-                    <h3><i class="fas fa-briefcase"></i> Business & Finance</h3>
-                    <ul>
-                        <li>Financial Analysis</li>
-                        <li>Revenue Management</li>
-                        <li>Operations Analytics</li>
-                        <li>Business Strategy</li>
-                    </ul>
-                </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2025 – Present</div>
+            <h4>Director of Finance &amp; Operations</h4>
+            <p class="timeline-place">Mis Sueños Holbox · Mexico, QR</p>
+            <p>Led FP&amp;A for a 17-room boutique hotel. Built Python-based pricing and forecasting models, increasing monthly revenue and improving budget accuracy by 20%.</p>
+          </div>
 
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
-                    <ul>
-                        <li>Git & GitHub</li>
-                        <li>Excel & Sheets</li>
-                        <li>Figma</li>
-                        <li>VS Code</li>
-                    </ul>
-                </div>
-            </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2025 – Present</div>
+            <h4>Founder — Don Junior</h4>
+            <p class="timeline-place">Premium Agave Spirit · Mexico</p>
+            <p>Building a premium agave spirit brand from scratch. Leading financial modelling, unit economics, pricing strategy, and production cost analysis.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Feb – Aug 2024</div>
+            <h4>Market Manager</h4>
+            <p class="timeline-place">Cabana Ichkiichpan · Bacalar, Mexico</p>
+            <p>Designed and executed a growth strategy that increased reservations by 40% year-over-year through digital transformation and targeted marketing.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023 – 2027</div>
+            <h4>Bachelor of Commerce — Finance &amp; Economics</h4>
+            <p class="timeline-place">University of Toronto, Rotman Commerce</p>
+            <p>Specialist in Data Science. Recipient of the UofT International Award ($100,000). Courses: Financial Markets, ML in Finance, Data Analytics, Applied Econometrics.</p>
+          </div>
+
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume">
-        <div class="container">
-            <h2 class="section-title">Experience & Education</h2>
-            <div class="resume-content">
-                <div class="resume-section">
-                    <h3>Education</h3>
-                    <div class="resume-item">
-                        <div class="resume-header">
-                            <h4>Rotman Commerce - University of Toronto</h4>
-                            <span class="resume-date">2021 - 2025</span>
-                        </div>
-                        <p>Finance Specialization | GPA: 3.7+</p>
-                        <p class="resume-description">
-                            Coursework includes Financial Analysis, Investment Management, Data Analytics, 
-                            and Business Systems.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="resume-section">
-                    <h3>Experience</h3>
-                    <div class="resume-item">
-                        <div class="resume-header">
-                            <h4>Technology & Finance Project Lead</h4>
-                            <span class="resume-date">2023 - Present</span>
-                        </div>
-                        <p>Building and managing multiple tech projects at the intersection of finance and automation</p>
-                        <p class="resume-description">
-                            Led development of data dashboards, analytics tools, and automation platforms 
-                            for business operations.
-                        </p>
-                    </div>
-
-                    <div class="resume-item">
-                        <div class="resume-header">
-                            <h4>Finance & Analytics Consultant</h4>
-                            <span class="resume-date">2022 - 2023</span>
-                        </div>
-                        <p>Provided financial analysis and system optimization for hospitality businesses</p>
-                        <p class="resume-description">
-                            Developed revenue management strategies and implemented tracking systems 
-                            for performance metrics.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="resume-download">
-                <p>Want to see my full resume?</p>
-                <a href="#" class="btn btn-primary" download>
-                    <i class="fas fa-download"></i> Download Resume (PDF)
-                </a>
-            </div>
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container contact-grid">
+      <div class="contact-left">
+        <span class="section-tag">05 — Contact</span>
+        <h2 class="section-heading">Let's work<br /><em>together</em></h2>
+        <p>
+          Open to freelance projects, internships, and collaborations. 
+          If you have a data or finance problem worth solving, let's talk.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:n.duenas@mail.utoronto.ca" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            n.duenas@mail.utoronto.ca
+          </a>
+          <a href="https://linkedin.com/in/new-angel" target="_blank" rel="noopener" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            linkedin.com/in/new-angel
+          </a>
+          <a href="https://github.com/" target="_blank" rel="noopener" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            github.com/angelramirez
+          </a>
         </div>
-    </section>
+      </div>
+      <div class="contact-right">
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h3>Let's Work Together</h3>
-                    <p>
-                        I'm always interested in hearing about new projects and opportunities. 
-                        Feel free to reach out!
-                    </p>
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-logo">AR</div>
+      <p class="footer-copy">© 2026 Angel Ramirez. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
 
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <a href="mailto:n.duenas@mail.utoronto.ca">n.duenas@mail.utoronto.ca</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <i class="fas fa-linkedin"></i>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <a href="https://linkedin.com" target="_blank">linkedin.com/in/newangelramirez</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <i class="fas fa-github"></i>
-                            <div>
-                                <h4>GitHub</h4>
-                                <a href="https://github.com" target="_blank">github.com/newangelramirez</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="https://linkedin.com" target="_blank" class="social-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com" target="_blank" class="social-icon">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://twitter.com" target="_blank" class="social-icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2024 New Angel Ramirez Duenas. All rights reserved.</p>
-                <p>Built with HTML, CSS & JavaScript</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
